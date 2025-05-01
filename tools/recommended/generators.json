@@ -1,0 +1,9 @@
+{
+  "generators": {
+    "the-org-generator": {
+      "factory": "./src/generators/the-org-generator",
+      "schema": "./src/generators/schema.json",
+      "description": "the-org-generator generator"
+    }
+  }
+}

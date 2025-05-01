@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/schema",
+  "$id": "TheOrgGenerator",
+  "title": "Create an Angular library with Storybook configuration",
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string",
+      "description": "The name of the library.",
+      "x-prompt": "What project name would you like to use?",
+      "x-priority": "important"
+    },
+    "directory": {
+      "type": "string",
+      "description": "A directory where the library is placed.",
+      "$default": {
+        "$source": "argv",
+        "index": 0
+      },
+      "x-prompt": "Which directory do you want to create the library in?",
+      "x-priority": "important"
+    }
+  },
+  "required": ["name", "directory"]
+}
